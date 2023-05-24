@@ -1,0 +1,196 @@
+* {
+  transition: 0.12s;
+}
+
+body {
+  margin: 0;
+  font-family: "Monument Extended", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* dark-mode */
+
+.dark-mode {
+  background-color: rgb(10, 10, 10);
+}
+
+/* header */
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 span {
+  color: #ff5500;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+
+/* container */
+
+.container {
+  max-width: 960px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+
+/* notes-list */
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 200px;
+}
+
+/* note */
+
+.note {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode .note {
+  background-color: rgb(25, 25, 25);
+  color: #fff;
+}
+
+/* new note */
+
+.note.new {
+  background-color: #ff5500;
+  color: #000;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #ff5500;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+  font-family: "Monument Extended", sans-serif;
+}
+
+::placeholder {
+  font-family: "Monument Extended", sans-serif;
+
+  color: #000;
+}
+
+/* save button */
+
+.save {
+  background-color: rgb(10, 10, 10);
+  font-family: "Monument Extended", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.save:hover {
+  cursor: pointer;
+}
+
+/* delete button */
+
+.delete-btn {
+  background-color: rgb(10, 10, 10);
+  font-family: "Monument Extended", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+/* search bar */
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  background-color: #e7e7e7;
+  font-family: "Monument Extended", sans-serif;
+}
+
+.search input:focus {
+  outline: none;
+  border: none;
+}
+
+.search input::placeholder {
+  font-family: "Monument Extended", sans-serif;
+  color: grey;
+}
+
+.dark-mode .search {
+  background-color: rgb(25, 25, 25);
+}
+
+.dark-mode .search input {
+  font-family: "Monument Extended", sans-serif;
+  background-color: rgb(25, 25, 25);
+  color: #fff;
+}
+
+/* switch mode */
+
+.toggle-btn {
+  background-color: rgb(10, 10, 10);
+  font-family: "Monument Extended", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.dark-mode .toggle-btn {
+  background-color: #fff;
+  font-family: "Monument Extended", sans-serif;
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}

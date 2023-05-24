@@ -2,7 +2,7 @@
 
 A basic React-based web application for taking fast notes. Made for learning purpose.
 
-[Live demo](https://snotes-harrnish.vercel.app/)
+
 
 # Project Screenshots
 
